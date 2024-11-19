@@ -1,0 +1,255 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+header {
+    background-image: url('your-header-image.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.5rem;
+    color: #bbbbbb;
+    margin-bottom: 20px;
+}
+
+nav {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #1e90ff;
+}
+
+#nav-toggle {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+section {
+    padding: 50px 20px;
+    margin: 30px 0;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease-in-out;
+}
+
+section:hover {
+    background-color: #2c2c2c;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #1e90ff;
+}
+
+p,
+ul {
+    font-size: 1.1rem;
+    color: #cccccc;
+}
+
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.about-content {
+    flex: 2;
+}
+
+
+.project {
+    margin: 30px 0;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #2c2c2c;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.project img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.project h3 {
+    font-size: 1.8rem;
+    color: #1e90ff;
+}
+
+.project p {
+    margin-top: 10px;
+    color: #bbbbbb;
+}
+
+.project-link {
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project-link:hover {
+    color: #ff6f61;
+}
+
+/* Skills section */
+#skills {
+    text-align: center;
+}
+
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#skills ul li {
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 10px 15px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+/* Academic Qualifications */
+#qualifications {
+    text-align: center;
+}
+
+#qualifications ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#qualifications ul li {
+    background-color: #333;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+#qualifications ul li span {
+    display: block;
+    color: #bbbbbb;
+}
+
+
+#achievements {
+    text-align: center;
+}
+
+#achievements ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#achievements ul li {
+    background-color: #333;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+#achievements ul li span {
+    display: block;
+    color: #bbbbbb;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-top: 1px solid #333;
+    margin-top: 30px;
+}
+
+footer p {
+    color: #777;
+}
+
+
+@media (max-width: 600px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    #nav-toggle {
+        display: block;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .project {
+        flex-direction: column;
+    }
+}
